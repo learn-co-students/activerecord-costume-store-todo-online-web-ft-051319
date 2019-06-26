@@ -63,6 +63,7 @@ describe "CostumeStore" do
       name: "New York Costumes", 
       closing_time: end_time 
     )
+    
     expect(CostumeStore.find_by(name: "New York Costumes").closing_time).to eq(end_time)
   end
 
